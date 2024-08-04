@@ -1,0 +1,38 @@
+% Example of a binlister that I used for my data, based on how I saved the triggers throughout a specific experiment
+
+
+bin 1
+L3 infrequent
+.{1}
+
+bin 2
+L3 environmental
+.{2}
+
+bin 3
+L3 frequent
+.{3}
+
+bin 4
+MAN infrequent
+.{11}
+
+bin 5
+MAN environmental
+.{22}
+
+bin 6
+MAN frequent
+.{33}
+
+bin 7
+L2 infrequent
+.{111}
+
+bin 8
+L2 environmental 
+.{222}
+
+bin 9
+L2 frequent
+.{333}
