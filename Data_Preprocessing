@@ -1,0 +1,228 @@
+% This code was originally provided by Dr. Julian Elias Reiser from IfaDO and is based on the BeMoBil pipeline for mobile neuroimaging data: 
+%%% Klug, M., Jeung, S., Wunderlich, A., Gehrke, L., Protzak, J., Djebbara, Z., Argubi-Wollesen, A., Wollesen, B., & Gramann, K. (2022). The BeMoBIL Pipeline for automated analyses of multimodal mobile brain and body imaging data. In bioRxiv (p. 2022.09.29.510051). https://doi.org/10.1101/2022.09.29.510051
+
+% The code was adapted specifically for my experimental dataset. When reusing, you must adapt the code to your experimental setting. 
+% To understand how to set the different values and thresholds, please refer to the BeMoBil pipeline documentation: 
+% --> https://github.com/BeMoBIL/bemobil-pipeline/blob/fb8667aede2e3d43996be9b16a4d041ebe38eb4c/template_bemobil_config.m 
+
+% When using this script, I worked in EEGLab version 2022.1 and the following plugins (not all are necessary for this script though):  
+%%% EEGLAB: adding "AMICA" v1.7 (see >> help eegplugin_amica)
+%%% EEGLAB: adding "Biosig" v3.8.3 to the path
+%%%  Koduot: windows-1252
+%%% Darbeliai: Checking for updates...
+%%%  Kalba: en_GB
+%%% EEGLAB: adding "Darbeliai" v2022.12.22.1 (see >> help eegplugin_darbeliai)
+%%% EEGLAB: adding "ERPLAB" v9.00 (see >> help eegplugin_erplab) 
+%%% EEGLAB: adding "FMUT" v0.5.1 to the path
+%%% EEGLAB: adding "Fieldtrip-lite" v20230202 to the path
+%%% EEGLAB: adding "ICLabel" v1.4 (see >> help eegplugin_iclabel)
+%%% EEGLAB: adding "Mobilab" v20210924 (see >> help eegplugin_mobilab)
+%%% EEGLAB: adding "TFA v" v20221221 (see >> help eegplugin_TFA)
+%%% EEGLAB: adding "bemobil-pipeline-" v1.9 (see >> help eegplugin_bemobil_pipeline)
+%%% EEGLAB: adding "bva-io" v1.71 (see >> help eegplugin_bva_io)
+%%% EEGLAB: adding "clean_rawdata" v2.7 (see >> help eegplugin_clean_rawdata) 
+%%% EEGLAB: adding "dipfit" v4.3 (see >> help eegplugin_dipfit) 
+%%% EEGLAB: adding "firfilt" v2.6 (see >> help eegplugin_firfilt)
+%%% EEGLAB: adding "xdfimport" v1.18 (see >> help eegplugin_xdfimport)
+%%% EEGLAB: adding "zapline-plus" v1.2.1 (see >> help eegplugin_zapline_plus)
+
+
+% Define paths for different data and tool locations
+PATH = '...'; % Main path, e.g. 'C:\Users\Figalova\Desktop\Nikol'
+PATH_LAB = '...'; % where your EEGLab is saved, use the same version within the experiment, don't update plugins between participants, e.g. C:\Users\Figalova\Desktop\Nikol\eeglab2022.1
+
+% the following paths define where your data is stored, and where the outputs of this script will be saved. You must create these folders manually. 
+PATH_DFLOW = [PATH '/lists/dflow'];
+PATH_RAW = [PATH '/data/unprocessed/'];
+PATH_EEG = [PATH '/data/EEG'];
+PATH_ICA = [PATH '/data/ICA'];
+PATH_PRUNED =[PATH '/data/PRUNED'];
+PATH_PLOT = [PATH '/plots/'];
+PATH_STAT = [PATH '/stats/'];
+
+% List of subject identifiers to process
+subjlist = {'29', '30'}; % when you want to process only certain dataset(s)
+
+% If you want to process all, uncomment the following line to process all subjects
+% subjlist = {'01','02','03','04','05','06','07','08','09','10',...
+%     '11','12','13','14','15','16','17','18','19','20',...
+%     '21','22', '23', '24', '25', '26', '27', '28', '29', '30'};
+
+% List of all subject codes, this is how I named my participants 
+allsubjlist = {'vp01','vp02','vp03','vp04','vp05','vp06','vp07','vp08','vp09','vp10',...
+    'vp11','vp12','vp13','vp14','vp15','vp16','vp17','vp18','vp19','vp20',...
+    'vp21','vp22','vp23','vp24','vp25','vp26','vp27','vp28','vp29','vp30'};
+
+% Loop through each subject
+for subj = 1:length(subjlist)
+    
+    eeglab;
+    
+    SUBJ = subjlist{subj};
+
+    EEG = pop_loadset('filename',['vp' SUBJ '.set'],'filepath',PATH_RAW);
+   
+%    bemobil_config.channels_to_remove
+%    bemobile_config.resample_freq
+        
+    % delete acceleration channels
+    EEG = pop_select( EEG, 'channel',{'Fp1','Fz','F3','F7','F9','FC5','FC1','C3','T7','CP5','CP1','Pz','P3','P7','P9','O1','Oz','O2','P10','P8','P4','CP2','CP6','T8','C4','Cz','FC2','FC6','F10','F8','F4','Fp2'});
+    [ALLEEG, EEG, CURRENTSET] = eeg_store( ALLEEG, EEG, 0 );
+
+    % save channel locations
+    EEG = pop_chanedit(EEG, 'lookup', [PATH_LAB '/plugins/dipfit/standard_BEM/elec/standard_1005.elc']);
+    channel_locations = EEG.chanlocs;
+    OLD = EEG;
+    EEG = pop_select(EEG,'nochannel',{EEG.chanlocs(33:end).labels});
+
+    % downsample to 500 Hz
+    EEG = pop_resample( EEG, 500);
+
+    % Apply bandpass filter (0.1 - 100 Hz)
+    EEG  = pop_basicfilter( EEG,  1:32 , 'Cutoff', [0.1 100], 'Design', 'butter', 'Filter', 'bandpass'); 
+    eeglab redraw
+
+    %% use zapline
+    % noise frequencies are at 50 Hz (line)
+    EEG_clean = clean_data_with_zapline_plus_eeglab_wrapper(EEG);
+    saveas(gcf,[PATH_PLOT '/line/linenoise_vp' SUBJ '.png']);
+
+    % plot cleaned
+    pop_eegplot( EEG_clean, 1, 1, 1);
+    linescoreplot = gcf;
+    saveas(gcf,[PATH_PLOT '/line/vp' SUBJ '.png']);
+
+
+    %% channel correction / rejection
+    % Define criteria for bad channel detection
+    chancorr_crit = 0.78; % Recommended are values of 0.75 (rather lax) to 0.85 (rather strict).
+    chan_max_broken_time = 0.5; % Recommended are values from 0.2 (20% of the time max, strict) to 0.5 (50% of the time, lax)
+    chan_detect_num_iter = 10; % To allow consistent and reproducible detection, the process is repeated several times (recommended >10) 
+    chan_detected_fraction_threshold = 0.5; %  channels that were flagged as "bad" more than a given proportion are then removed
+    flatline_crit = 'off';
+    line_noise_crit = 'off';
+    num_chan_rej_max_target = 6;
+
+    % Detect bad channels
+    chans_to_interp = bemobil_detect_bad_channels(EEG_clean, ALLEEG, CURRENTSET,chancorr_crit,chan_max_broken_time,...
+        chan_detect_num_iter,chan_detected_fraction_threshold,flatline_crit,line_noise_crit, num_chan_rej_max_target);
+    
+
+    % Save the list of channels to interpolate
+    save([PATH_STAT '/analysis/' SUBJ '_chans2interp.mat'],'chans_to_interp');
+    eeglab redraw
+
+    % do the actual interpolation and full rank average referencing (no rank reduction)
+    [ALLEEG, EEG_preprocessed, CURRENTSET] = bemobil_interp_avref( EEG_clean , ALLEEG, CURRENTSET, chans_to_interp);
+    
+    %% filter for AMICA
+    % See Klug & Gramann (2020) for an investigation of filter effect on AMICA -> 1.25 Hz should be a good compromise if you
+    % don't know how much movement exists, otherwise even higher may be good, up to 2Hz, and you need to subtract 0.25 to
+    % obtain the correct cutoff value for a filter order of 1650
+    filter_lowCutoffFreqAMICA = 1.5; % 1.75 is 1.5Hz cutoff!
+    filter_AMICA_highPassOrder = 1650; % was used by Klug & Gramann (2020)
+    filter_highCutoffFreqAMICA = []; % not used
+    filter_AMICA_lowPassOrder = []; 
+
+    out_filename = [];
+    out_filepath= [];
+
+    [ ALLEEG, EEG_filtered, CURRENTSET ] = bemobil_filter(ALLEEG, EEG_preprocessed, CURRENTSET, filter_lowCutoffFreqAMICA,...
+        filter_highCutoffFreqAMICA, out_filename, out_filepath, filter_AMICA_highPassOrder, filter_AMICA_lowPassOrder);
+    
+    %% compute AMICA
+    % data rank is the number of channels that were not interpolated
+    % for more information see: https://sccn.ucsd.edu/githubwiki/files/eeg_nonstationarity_and_amica.pdf
+    data_rank = EEG_filtered.nbchan - length(EEG_filtered.etc.interpolated_channels);
+
+    % additional AMICA settings
+    amica = true;
+    numb_models = 1; % default 1
+    AMICA_autoreject = 1; % uses automatic rejection method of AMICA. no time-cleaning (manual or automatic) is needed then!
+    AMICA_n_rej = 10; % number of iterations during automatic rejection, default 10
+    AMICA_reject_sigma_threshold = 3; % threshold for rejection, default 3
+
+    AMICA_max_iter = 2000; % maximum number of AMICA iterations, default 2000
+
+    % 4 threads are most effective for single subject speed, more threads don't really shorten the calculation time much.
+    % best efficiency is using just 1 thread and have as many matlab instances open as possible (limited by the CPU usage).
+    % Remember your RAM limit in this case.
+    max_threads = 4;
+
+    other_algorithm = [];
+    out_filename = [];
+    out_filepath = [];
+
+    % compute AMICA
+    [ALLEEG, EEG_amica, CURRENTSET] = bemobil_signal_decomposition(ALLEEG, EEG_filtered, CURRENTSET,...
+        amica, numb_models, max_threads, data_rank, other_algorithm, out_filename, out_filepath, AMICA_autoreject,...
+        AMICA_n_rej, AMICA_reject_sigma_threshold,AMICA_max_iter);
+    eeglab redraw
+
+    %% Plot AMICA results
+    % plot topographies
+    pop_topoplot(EEG_amica, 0, [1:[data_rank]] ,'final_processed',[7 7] ,0,'electrodes','off');
+
+    % plot autorejection
+    data2plot = EEG_amica.data(1:round(EEG_amica.nbchan/10):EEG_amica.nbchan,:)';
+    figure;
+    set(gcf,'color','w','Position', get(0,'screensize'));
+    plot(data2plot,'g');
+    data2plot(~EEG_amica.etc.bad_samples,:) = NaN;
+    hold on
+    plot(data2plot,'r');
+    xlim([-10000 EEG_amica.pnts+10000])
+    ylim([-1000 1000])
+    title(['AMICA autorejection, removed ' num2str(round(EEG_amica.etc.bad_samples_percent,2)) '% of the samples'])
+    xlabel('Samples')
+    ylabel('\muV')
+    saveas(gcf,[PATH_PLOT '/amica/amicaresults_subj' SUBJ '.png']);
+    eeglab redraw
+    
+    %% fit dipoles
+    RV_threshold = 100; % no ICs are rejected
+    remove_outside_head = 'off'; % no ICs are rejected
+    number_of_dipoles = 1; % it is possible to fit dual dipoles but usually not recommended
+
+    [ALLEEG, EEG_dipfit, CURRENTSET] = bemobil_dipfit( EEG_amica , ALLEEG, CURRENTSET, [], RV_threshold,...
+        remove_outside_head, number_of_dipoles);
+    
+    %% Copy the spatial filter data into the unfiltered data set for further processing
+    % e.g. ICLabel should be done on unfiltered data (or less than 1Hz highpass), and ERPs should have a lower filter than
+    % the one used for ICA usually
+ 
+    disp('Copying all information into full length dataset for single subject processing...');
+    [ALLEEG, EEG_AMICA_copied, CURRENTSET] = bemobil_copy_spatial_filter(EEG_preprocessed, ALLEEG, CURRENTSET,...
+        EEG_dipfit);
+    
+    EEG_AMICA_copied = pop_iclabel(EEG_AMICA_copied, 'default');
+    %EEG_AMICA_copied = DO_Blink_detect_WO(EEG_AMICA_copied,.9,.75);
+    %EEG_AMICA_copied = DO_CodeBlinksWO_gs(EEG_AMICA_copied);
+    EEG_AMICA_copied = eeg_checkset(EEG_AMICA_copied,'eventconsistency')
+    %% clean with IClabel
+
+    % 'default' classifier is slightly better for brain ICs but did not lead to good classification of muscles (see Klug &
+    % Gramann (2020)), 'lite' was better overall.
+    %iclabel_classifier = 'default';
+    classifier_version = 'default';
+    iclabel_classes = 1;   % 'Brain', 'Muscle', 'Eye', 'Heart', 'Line Noise', 'Channel Noise', 'Other'
+    classes_to_keep = 1;
+    threshold_to_keep = -1;
+    % if the threshold is set to -1, the popularity classifier is used (i.e. every IC gets the class with the highest
+    % probability), if it is set to a value, the summed score of the iclabel_classes must be higher than this threshold to
+    % keep an IC. Must be in the [0 1] range!
+    %iclabel_threshold = {-1};
+
+    [ALLEEG, EEG_preprocessed_and_ICA, CURRENTSET, ICs_keep, ICs_throw] = bemobil_clean_with_iclabel( EEG_AMICA_copied ,...
+        ALLEEG, CURRENTSET, classifier_version, classes_to_keep, threshold_to_keep);
+    
+    % plot final ICA cleaned
+    saveas(gcf,[PATH_PLOT '/iclabel/iclabel_subj' SUBJ '.png']);
+
+    % pop_eegplot( EEG_preprocessed_and_ICA, 1, 1, 1);
+
+	EEG_AMICA_copied = pop_saveset(EEG_AMICA_copied, 'filename', ['lg' SUBJ '_amica.set'], 'filepath', PATH_ICA);
+    EEG_preprocessed_and_ICA = pop_saveset(EEG_preprocessed_and_ICA, 'filename', ['lg' SUBJ '_pruned.set'], 'filepath', PATH_PRUNED);
+
+    close all
+end % subj
