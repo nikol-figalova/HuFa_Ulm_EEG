@@ -66,11 +66,11 @@ for subj = 1:length(subjlist)    % load subject eeg data
     [EEG deleteregions] = pop_rejcont(EEG, 'elecrange',[1:length(EEG.chanlocs)] ,'freqlimit',[20 30] ,...
         'threshold',10,'epochlength',0.1,'contiguous',4,'addlength',0.25,'taper','hamming');
          
-    % create eventlist 
+    % create eventlist (you must create your own eventlist and replace the path)
     EEG  = pop_creabasiceventlist( EEG , 'AlphanumericCleaning', 'on', 'BoundaryNumeric', { -99 },...
-        'BoundaryString', { 'boundary' }, 'Eventlist', ['C:\Users\figalova\Desktop\Bosch\Data\data/eventlist' SUBJ '_eventlist.txt'] );
+        'BoundaryString', { 'boundary' }, 'Eventlist', ['C:\Users\figalova\Desktop\Bosch\Data\data/eventlist' SUBJ '_eventlist.txt'] ); 
 
-    % assign bins
+    % assign bins (you must create your own bins and replace the path)
     EEG  = pop_binlister( EEG , 'BDF', 'C:\Users\figalova\Desktop\Bosch\Data\binlister.txt', ...
         'IndexEL',  1, 'SendEL2', 'EEG', 'Voutput', 'EEG' );
 
@@ -88,7 +88,7 @@ for subj = 1:length(subjlist)    % load subject eeg data
     ERP = pop_averager( EEG , 'Criterion', 'good', 'DQ_custom_wins', 0, 'DQ_flag', 1, 'DQ_preavg_txt', 0, 'ExcludeBoundary', 'on', 'SEM',...
     'on' );
    
-    % create difference wave, the bins were set manually and correspond to my experimental setting, you must do this based on your data 
+    % create difference wave
     ERP = pop_binoperator( ERP, {   'Bin10 = Bin1 - Bin3 label L3 infrequent DW',...
                                     'Bin11 = Bin2 - Bin3 label L3 environmental DW',...
                                     'Bin12 = Bin4 - Bin6 label MAN infrequent DW', ...
