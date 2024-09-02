@@ -2,6 +2,7 @@
 
 This repository serves as a source of materials to conduct EEG and ERP experiments in the driving simulator at the Department of Human Factors, Ulm University, Germany. All the information provided here is without warranty and is intended for educational and research purposes. Feel free to modify the contact information, protocols, or any other details to better fit your specific requirements.
 
+![test](https://github.com/nikol-figalova/images/blob/main/WhatsApp%20Image%202021-02-17%20at%2016.55.12%20(1).jpeg)
 
 ## Citation
 
