@@ -1,8 +1,5 @@
-# How to EEG in a Driving Simulator
-
-This repository serves as a source of materials to conduct EEG and ERP experiments in the driving simulator at the Department of Human Factors, Ulm University, Germany. All the information provided here is without warranty and is intended for educational and research purposes. Feel free to modify the contact information, protocols, or any other details to better fit your specific requirements.
-
-Thanks to everyone who contributed to this collection of recommendations and guidelines for conducting and analyzing EEG experiments in our driving simulator in any way (analysis scripts, SILAB code, materials, and writing support for this manual), especially:
+# EEG in HuFa Driving Simulator: Recommendations & Resources  
+This repository is a source of materials for EEG and ERP experiments in the driving simulator at the Department of Human Factors, Ulm University, Germany. All the information provided here is without warranty and is intended for educational and research purposes. Feel free to modify the contact information, protocols, or other details to fit your specific requirements better. Thanks to everyone who contributed to this collection of recommendations and guidelines for conducting and analyzing EEG experiments in our driving simulator in any way (analysis scripts, SILAB code, materials, and writing support for this manual), especially:
 - Dr. Julian Elias Reiser
 - Dr. Jürgen Pichen
 - Dr. Philipp Hock
@@ -14,43 +11,44 @@ Thanks to everyone who contributed to this collection of recommendations and gui
 - Leon Bach
 
 ### Citation
-
 If you use the resources or code from this repository, please cite it as follows:<br />
 Figalova, N. (2024). HuFa_Ulm_EEG: Materials for EEG Experiments in Driving Simulator. GitHub. https://github.com/yourusername/HuFa_Ulm_EEG
 
-### List of Contents 
-1. (Some Very Basic) Background Knowledge
-  1.1. Basic Principles of EEG
-  1.2. Basic Principles of ERP
-  1.3. Application of EEG and ERP in Driving Research
-  1.4. Recommended Literature
-2. EEG Equipment Overview
-  2.1. Hardware
-  2.2. Consumables
-3. Software Requirements
-  3.1. Setting Up Workspace for Data Recording 
-    3.1.1. BrainVision Recorder 
-    3.1.2. LSL Recorder 
-4. EEG Set Up
-  4.1. Electrooculography (EOG)
-  4.2. Electroencephalography (EEG)
-5. Data Pre-Processing and Analysis
-  5.1. Recommended Literature
-6. Tips and Good Practices
-  6.1. Before the Experiment
-    6.1.1. Ethical Approval
-    6.1.2. Instructions to Participants
-  6.2. General Recommendations
-  6.3. Final Notes
-   
+## List of Contents 
+1. (Some Very Basic) Background Knowledge<br />
+  1.1. Basic Principles of EEG<br />
+  1.2. Basic Principles of ERP<br />
+  1.3. Application of EEG and ERP in Driving Research<br />
+  1.4. Recommended Literature<br />
+2. EEG Equipment Overview<br />
+  2.1. Hardware<br />
+  2.2. Consumables<br />
+3. Software Requirements<br />
+  3.1. Setting Up Workspace for Data Recording<br />
+    3.1.1. BrainVision Recorder<br />
+    3.1.2. LSL Recorder<br />
+4. EEG Set Up<br />
+  4.1. Electrooculography (EOG)<br />
+  4.2. Electroencephalography (EEG)<br />
+5. Data Pre-Processing and Analysis<br />
+  5.1. Recommended Literature<br />
+6. Tips and Good Practices<br />
+  6.1. Before the Experiment<br />
+    6.1.1. Ethical Approval<br />
+    6.1.2. Instructions to Participants<br />
+  6.2. General Recommendations<br />
+  6.3. Final Notes<br />
+  
 # 1. (Some Very Basic) Background Knowledge
 
 Driver-vehicle interactions can be assessed using different approaches. Self-report measures are easy to implement; however, they might be overly simplistic. Performance measures can provide good sensitivity for differentiating high-demand performance tasks; however, they are rather inefficient when studying low- to medium-demand tasks. Another possible approach is to use psychophysiological data, which is becoming more convenient due to the increasing availability of relatively cheap and precise wearable sensors. Psychophysiological measures such as electroencephalogram (EEG), electrocardiogram (ECG), and electrodermal activity (EDA) can be used to assess drivers’ experience unobtrusively in real time. Disadvantages of psychophysiological measures include the need for special tools and equipment, expertise to collect and analyze the data, and possibly a high signal-to-noise ratio.<br />
+ 
 For more details, see Cohen’s (2017) paper “Where Does EEG Come From and What Does It Mean?” and Luck’s (2014) book “An Introduction to the Event-Related Potential Technique”. The following text provides only a very broad introduction to EEG and ERP techniques.<br />
 
 ### 1.1. Basic Principles of EEG
 
 Electroencephalography (EEG) is a prominent non-invasive technique used to record the electrical activity of the brain. This method involves measuring voltage fluctuations resulting from ionic current flows within the neurons of the brain. To capture these electrical patterns, electrodes are placed on the scalp using conductive gel to enhance signal quality.<br />
+ 
 EEG is recognized for its exceptional temporal resolution, often in the range of milliseconds, allowing researchers to observe rapid changes in brain activity as they occur. However, it is worth noting that this method has relatively low spatial resolution, making pinpointing the exact origins of the recorded electrical activity within the brain challenging.<br />
 <br />
 The traditional approach to EEG involves an ongoing recording of brain activity. Analysts then examine the spectral properties of this activity in the frequency domain, exploring different bands of brainwaves (such as alpha, beta, delta, and theta waves) and their associations with various cognitive and emotional states.<br />
@@ -340,6 +338,8 @@ Over time and with experience, you'll figure out what works best for you. Below 
 
 **Pilot Tests:** Running a pilot test is crucial, and potentially several may be necessary. Have the pilot participant complete the entire experiment to uncover any issues that might arise later. Ensure all data is logged correctly and all triggers are saved accurately. It's advisable to have two researchers present during the setup and throughout the experiment whenever possible.
 
+**Power Bank:** Charge your power bank in between participants and keep it fully charged. Never plug any other devices directly into a power plug. 
+
 ## 6.3. Final Notes
 The experimental setup is highly individual and influenced by various factors, including researcher experience, participant hair and skin type, weather, and more. With experience, setup time will likely decrease, but some factors are beyond your control. Realistically, expect setup times between 30 and 90 minutes.
 
@@ -361,6 +361,7 @@ ToDo:
 - 3.1.  setting up workspace
 - example ethics approval
 - example instructions
-
+- pic of entire equipment setup
+- 
 
 
