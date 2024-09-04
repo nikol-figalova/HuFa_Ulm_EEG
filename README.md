@@ -83,33 +83,33 @@ Lohani, M., Payne, B. R., & Strayer, D. L. (2019). A review of psychophysiologic
 # 2. EEG Equipment Overview
 ### 2.1. Hardware 
 
-1. LiveAmp amplifier <br /> <img src="https://github.com/nikol-figalova/images/blob/main/amplifier.jpg" width="30%">
-2. Wireless trigger transmitter <br /> <img src="https://github.com/nikol-figalova/images/blob/main/trigger_transmitter.jpg" width="30%">
-3. Trigger box and the wireless trigger receiver <br /> <img src="https://github.com/nikol-figalova/images/blob/main/trigger_extension.jpg" width="30%">
-4. Recording laptop with the bluetooth receiver and the Recorder dongle <br /> <img src="https://github.com/nikol-figalova/images/blob/main/laptop_dongles.jpg" width="30%">
-5. Bluetooth receiver<br /> <img src="https://github.com/nikol-figalova/images/blob/main/Dongle_bluetooth.jpg" width="30%">
-6. USB stick with software and manuals<br /> <img src="https://github.com/nikol-figalova/images/blob/main/manuals_software.jpg" width="30%">
-7. Dongle for the BrainVision Recorder<br /> <img src="https://github.com/nikol-figalova/images/blob/main/Dongle_recorder.jpg" width="30%">
-8. Electrooculography (EOG) electrodes plugged in the BIP2AUX adapter<br /> <img src="https://github.com/nikol-figalova/images/blob/main/ECG_electrodes.jpg" width="30%">
-9. EEG electrodes<br /> <img src="https://github.com/nikol-figalova/images/blob/main/EEG_electrodes.jpeg" width="30%">
-10. Reference and ground EEG electrodes<br /> <img src="https://github.com/nikol-figalova/images/blob/main/EEG_reference_electrode.jpeg" width="30%"><br /> <img src="https://github.com/nikol-figalova/images/blob/main/EEG_grounding_electrode.jpeg" width="30%">
-11. Cable to connect the amplifier with the trigger extension<br /> <img src="https://github.com/nikol-figalova/images/blob/main/cable2.jpeg" width="30%">
-12. Cable to connect the power bank with the amplifier<br /> <img src="https://github.com/nikol-figalova/images/blob/main/USBadapter.jpg" width="30%">
-13. Power bank with charger<br /> <img src="https://github.com/nikol-figalova/images/blob/main/powerbank.jpeg" width="30%">
-14. Clip to fix the amplifier to the seat belt<br /> <img src="https://github.com/nikol-figalova/images/blob/main/clipper.jpg" width="30%">
-15. EEG caps<br /> <img src="https://github.com/nikol-figalova/images/blob/main/EEG-cap)sizes.jpg" width="30%">
-16. Dummy head<br /> <img src="https://github.com/nikol-figalova/images/blob/main/EEG_dummyhead.jpg" width="30%">
-17. EEG cap size mark<br /> <img src="https://github.com/nikol-figalova/images/blob/main/EEG_cap_size.jpeg" width="30%">
+1. LiveAmp amplifier <br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/amplifier.jpg" width="30%">
+2. Wireless trigger transmitter <br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/trigger_transmitter.jpg" width="30%">
+3. Trigger box and the wireless trigger receiver <br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/trigger_extension.jpg" width="30%">
+4. Recording laptop with the bluetooth receiver and the Recorder dongle <br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/laptop_dongles.jpg" width="30%">
+5. Bluetooth receiver<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/Dongle_bluetooth.jpg" width="30%">
+6. USB stick with software and manuals<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/manuals_software.jpg" width="30%">
+7. Dongle for the BrainVision Recorder<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/Dongle_recorder.jpg" width="30%">
+8. Electrooculography (EOG) electrodes plugged in the BIP2AUX adapter<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/ECG_electrodes.jpg" width="30%">
+9. EEG electrodes<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/EEG_electrodes.jpeg" width="30%">
+10. Reference and ground EEG electrodes<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/EEG_reference_electrode.jpeg" width="30%"><br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/EEG_grounding_electrode.jpeg" width="30%">
+11. Cable to connect the amplifier with the trigger extension<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/cable2.jpeg" width="30%">
+12. Cable to connect the power bank with the amplifier<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/USBadapter.jpg" width="30%">
+13. Power bank with charger<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/powerbank.jpeg" width="30%">
+14. Clip to fix the amplifier to the seat belt<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/clipper.jpg" width="30%">
+15. EEG caps<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/EEG-cap)sizes.jpg" width="30%">
+16. Dummy head<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/EEG_dummyhead.jpg" width="30%">
+17. EEG cap size mark<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/EEG_cap_size.jpeg" width="30%">
 
 ### 2.2. Consumables 
-1. Disinfection for the skin under the EOG electrodes<br /> <img src="https://github.com/nikol-figalova/images/blob/main/desinfection.jpg" width="30%">
-2. Shampoo for participants <br /> <img src="https://github.com/nikol-figalova/images/blob/main/shampoos.jpg" width="30%">
-3. Syringes for EEG gel with Luer-lock<br /> <img src="https://github.com/nikol-figalova/images/blob/main/EEG_syringe.jpeg" width="30%">
-4. Blunt needles with 14G Luer-lock<br /> <img src="https://github.com/nikol-figalova/images/blob/main/EEG_LeuerLock_BluntNeedle.jpg" width="30%">
-5. Adhesive circles for the EOG electrodes<br /> <img src="https://github.com/nikol-figalova/images/blob/main/adhesive_rings.jpg" width="30%">
-6. Cotton pads<br /> <img src="https://github.com/nikol-figalova/images/blob/main/Cotton_tampons.jpg" width="30%">
-7. Abrasive electrolyte gel for EOG electrodes<br /> <img src="https://github.com/nikol-figalova/images/blob/main/ECG_abrasive_gel.jpg" width="30%">
-8. EEG gel<br /> <img src="https://github.com/nikol-figalova/images/blob/main/EEG_gel.jpg" width="30%">
+1. Disinfection for the skin under the EOG electrodes<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/desinfection.jpg" width="30%">
+2. Shampoo for participants <br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/shampoos.jpg" width="30%">
+3. Syringes for EEG gel with Luer-lock<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/EEG_syringe.jpeg" width="30%">
+4. Blunt needles with 14G Luer-lock<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/EEG_LeuerLock_BluntNeedle.jpg" width="30%">
+5. Adhesive circles for the EOG electrodes<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/adhesive_rings.jpg" width="30%">
+6. Cotton pads<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/Cotton_tampons.jpg" width="30%">
+7. Abrasive electrolyte gel for EOG electrodes<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/ECG_abrasive_gel.jpg" width="30%">
+8. EEG gel<br /> <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/EEG_gel.jpg" width="30%">
 
 Additionally, it's important to prepare bottled water and snacks (sweets work particularly well) as the process can be lengthy, and you want your participant to remain as comfortable as possible. 
 
@@ -148,9 +148,9 @@ To record your data, you'll need to set up all the electrodes. Typically, you'll
 It's recommended to set up the EOG electrodes before placing the EEG electrodes. To record horizontal eye movements, you'll need a set of three electrodes connected to a BIP2AUX adapter, which is plugged into the trigger extension box (AUX1).
 
 ECG electrodes with the BIP2AUX adapter: 
-<br /><img src="https://github.com/nikol-figalova/images/blob/main/ECG_electrodes.jpg" width="30%">
+<br /><img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/ECG_electrodes.jpg" width="30%">
 <br />Trigger extension with the trigger receiver: 
-<br /><img src="https://github.com/nikol-figalova/images/blob/main/trigger_extension.jpg" width="30%">
+<br /><img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/trigger_extension.jpg" width="30%">
 
 - The **blue** and **green** electrodes should be connected to the positive and negative poles of the adapter and placed at the outer corners of the participant’s eyes.
 - A **grounding electrode** (black) is also needed for recording and should be placed on the left mastoid.
@@ -159,8 +159,8 @@ Ensure consistency across participants by always placing the blue electrode on t
 
 The electrodes should be placed as shown:
 
-<br /><img src="https://github.com/nikol-figalova/images/blob/main/EOG_outer_plus_mastoid.jpg" width="30%">
-<br /><img src="https://github.com/nikol-figalova/images/blob/main/EOG_outher.jpg" width="30%">
+<br /><img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/EOG_outer_plus_mastoid.jpg" width="30%">
+<br /><img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/EOG_outher.jpg" width="30%">
 
 ### Steps for Electrode Placement:
 
@@ -179,16 +179,16 @@ For the electrode placement, follow these steps:
 2. Choose the appropriate cap size (currently, we have 54, 56, 58 cm). If the participant is in between sizes, choose the smaller one. If we don't have the exact size, select the closest one.
 3. Place the cap on the head. The positioning is specified in the BrainVision user manual. Generally, the front of the cap should be right above the participant's eyebrows. Use the measuring tape to ensure the cap is centered.
 4. Participants who wear glasses can put them back on now.
-5. Close the velcro under the participant’s chin. Ensure the cap is stable but not too tight—you should be able to fit two fingers under it, but comfort varies by participant.<br /><img src="https://github.com/nikol-figalova/images/blob/main/EEG_cap_space.jpg" width="30%">
-6. Plug the electrodes into the openings of the cap. You can do this before the experiment or while participants are filling in questionnaires. Use the dummy head for this. Ensure that the electrodes are not tangled, as this could damage them and cause additional noise in your signal.<br /><img src="https://github.com/nikol-figalova/images/blob/main/EEG_dummyhead_cap.jpg" width="30%">
-7. Connect the electrodes to the LiveAmp and clip the electrodes to the participant's t-shirt using the clip on them. This will prevent unnecessary movement of the electrodes and improve data quality. <br /><img src="https://github.com/nikol-figalova/images/blob/main/EEG_electrode_click.jpg" width="30%">. 
+5. Close the velcro under the participant’s chin. Ensure the cap is stable but not too tight—you should be able to fit two fingers under it, but comfort varies by participant.<br /><img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/EEG_cap_space.jpg" width="30%">
+6. Plug the electrodes into the openings of the cap. You can do this before the experiment or while participants are filling in questionnaires. Use the dummy head for this. Ensure that the electrodes are not tangled, as this could damage them and cause additional noise in your signal.<br /><img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/EEG_dummyhead_cap.jpg" width="30%">
+7. Connect the electrodes to the LiveAmp and clip the electrodes to the participant's t-shirt using the clip on them. This will prevent unnecessary movement of the electrodes and improve data quality. <br /><img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/EEG_electrode_click.jpg" width="30%">. 
 8. Connect the LiveAmp to the BrainVision Recorder.
-9. Apply conductive gel to each electrode, starting with the ground and reference electrodes. Use gentle pressure on the skin and, with the tip of the needle, push the hair aside. Use the needle to exfoliate the skin and remove dirt and sweat. Be careful not to hurt participants, and ensure it’s not too harsh for them.<br /><img src="https://github.com/nikol-figalova/images/blob/main/EEG_gel_filling.jpg" width="30%">
+9. Apply conductive gel to each electrode, starting with the ground and reference electrodes. Use gentle pressure on the skin and, with the tip of the needle, push the hair aside. Use the needle to exfoliate the skin and remove dirt and sweat. Be careful not to hurt participants, and ensure it’s not too harsh for them.<br /><img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/EEG_gel_filling.jpg" width="30%">
 10. Check the impedance level in the BrainVision Recorder. Ideally, keep the impedance under 10 kΩ. While the manual states that values under 25 kΩ are acceptable, I recommend going as low as possible. As Steve Luck points out, there is no substitute for clean data. If the impedance is too high, try applying more gel, scratching the skin a bit more, or pressing the electrode more firmly onto the scalp. However, avoid creating conductive bridges between different electrodes.
 11. One by one, fill all the electrode caps. With some participants, the impedance may decrease on its own after a few minutes. I recommend first applying the conductive gel to all electrodes using only gentle scratching with the needle, then checking each one for impedance and making adjustments until you reach the desired level.
 12. Once all electrodes are at the desired impedance level, the participant is ready for the experiment. This is a good time to ask if they need to use the toilet before starting.
 13. Offer water and snacks to participants at this point, as food and drinks should not be brought into the driving simulator.
-14. Bring the participant to the simulator. After they adjust the seat, ask them to put on the seatbelt and attach the amplifier to the seatbelt using the clipper. This will prevent unnecessary movement of the electrodes and improve data quality.<br /><img src="https://github.com/nikol-figalova/images/blob/main/EEG_simulator_setup.jpg" width="30%">
+14. Bring the participant to the simulator. After they adjust the seat, ask them to put on the seatbelt and attach the amplifier to the seatbelt using the clipper. This will prevent unnecessary movement of the electrodes and improve data quality.<br /><img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/EEG_simulator_setup.jpg" width="30%">
 15. Perform the experiment.
 16. After the experiment, remove the amplifier from the seatbelt, pick up the power bank and the extension, and bring the participant to the Fokusgrupenraum.
 17. Open the velcro under the chin. If the participant wears glasses, ask them to remove them now.
@@ -208,7 +208,7 @@ For the electrode placement, follow these steps:
 
 If not in use, store the electrodes in the wardrobe. Always handle the electrodes with care—they are fragile and expensive. If one breaks, it could take several weeks to resolve, which you definitely don’t want in the middle of your experiment.
 
-Keep the wardrobe organized and clean. Use the organizers to keep everything in its place. Avoid the following:<br /><img src="https://github.com/nikol-figalova/images/blob/main/Storage_bad.jpg" width="30%">
+Keep the wardrobe organized and clean. Use the organizers to keep everything in its place. Avoid the following:<br /><img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/Storage_bad.jpg" width="30%">
 
 # 5. Data Pre-Processing and Analysis
 
