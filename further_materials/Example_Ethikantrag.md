@@ -1,4 +1,4 @@
-# Study Protocol
+# Example Ethikantrag
 
 **Note**: (First and last parts of the Ethikantrag not included, use the latest version which can be downloaded from the Ethikkomission website)
 
