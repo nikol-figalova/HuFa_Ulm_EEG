@@ -334,6 +334,8 @@ Over time and with experience, you'll figure out what works best for you. Below 
 
 **Consumables:** Use syringes and needles with a Luer Lock, available on Amazon. Determine the best size for your needs, with size 14 being a good starting point. Always check consumable stock before experiments as receiving new supplies can take time. Be mindful that EEG gel has a shelf life of around 12 months, and even if it looks okay, it may degrade data quality over time.
 
+**Close your Conductive Gel:** Always keep your conductive gel well-closed to prevent faster drying. 
+
 **Data Backup:** Always check your data after each recording, save it with a proper name or code, and make a backup copy. Remember: no backup, no mercy.
 
 **Pilot Tests:** Running a pilot test is crucial, and potentially several may be necessary. Have the pilot participant complete the entire experiment to uncover any issues that might arise later. Ensure all data is logged correctly and all triggers are saved accurately. It's advisable to have two researchers present during the setup and throughout the experiment whenever possible.
