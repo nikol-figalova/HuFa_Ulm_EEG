@@ -18,7 +18,32 @@ Thanks to everyone who contributed to this collection of recommendations and gui
 If you use the resources or code from this repository, please cite it as follows:<br />
 Figalova, N. (2024). HuFa_Ulm_EEG: Materials for EEG Experiments in Driving Simulator. GitHub. https://github.com/yourusername/HuFa_Ulm_EEG
 
-# 1. Some Very Basic Background Knowledge
+### List of Contents 
+1. (Some Very Basic) Background Knowledge
+  1.1. Basic Principles of EEG
+  1.2. Basic Principles of ERP
+  1.3. Application of EEG and ERP in Driving Research
+  1.4. Recommended Literature
+2. EEG Equipment Overview
+  2.1. Hardware
+  2.2. Consumables
+3. Software Requirements
+  3.1. Setting Up Workspace for Data Recording 
+    3.1.1. BrainVision Recorder 
+    3.1.2. LSL Recorder 
+4. EEG Set Up
+  4.1. Electrooculography (EOG)
+  4.2. Electroencephalography (EEG)
+5. Data Pre-Processing and Analysis
+  5.1. Recommended Literature
+6. Tips and Good Practices
+  6.1. Before the Experiment
+    6.1.1. Ethical Approval
+    6.1.2. Instructions to Participants
+  6.2. General Recommendations
+  6.3. Final Notes
+   
+# 1. (Some Very Basic) Background Knowledge
 
 Driver-vehicle interactions can be assessed using different approaches. Self-report measures are easy to implement; however, they might be overly simplistic. Performance measures can provide good sensitivity for differentiating high-demand performance tasks; however, they are rather inefficient when studying low- to medium-demand tasks. Another possible approach is to use psychophysiological data, which is becoming more convenient due to the increasing availability of relatively cheap and precise wearable sensors. Psychophysiological measures such as electroencephalogram (EEG), electrocardiogram (ECG), and electrodermal activity (EDA) can be used to assess drivers’ experience unobtrusively in real time. Disadvantages of psychophysiological measures include the need for special tools and equipment, expertise to collect and analyze the data, and possibly a high signal-to-noise ratio.<br />
 For more details, see Cohen’s (2017) paper “Where Does EEG Come From and What Does It Mean?” and Luck’s (2014) book “An Introduction to the Event-Related Potential Technique”. The following text provides only a very broad introduction to EEG and ERP techniques.<br />
@@ -79,6 +104,8 @@ Through these applications, EEG and ERP technologies prove to be indispensable i
 
 ### 1.4. Recommended Literature
 Lohani, M., Payne, B. R., & Strayer, D. L. (2019). A review of psychophysiological measures to assess cognitive states in real-world driving. Frontiers in human neuroscience, 13, 57.<br />
+Luck, S. J. (2014). An introduction to the event-related potential technique. MIT press.<br />
+
 
 # 2. EEG Equipment Overview
 ### 2.1. Hardware 
@@ -235,15 +262,14 @@ As far as I know, there is currently a new verison of EEGLab (2024), which offer
 ### 5.1. Recommended Literature
 Cohen, M. X. (2017). Where does EEG come from and what does it mean?. Trends in neurosciences, 40(4), 208-218.  
 Cohen, M. X. (2014). Analyzing neural time series data: theory and practice. MIT press.  
-Luck, S. J. (2014). An introduction to the event-related potential technique. MIT press.
 Luck, S. J. (2022). Applied event-related potential data analysis. LibreTexts.[Google Scholar].
 
 # 6. Tips and Good Practices 
 Over time and with experience, you'll figure out what works best for you. Below are general recommendations I've collected over the years of conducting EEG experiments. These could be useful when planning your first driving simulator or real-world EEG experiments.
 
-### Before the Experiment 
+### 6.1. Before the Experiment 
 
-**Ethical Approval**
+**6.1.1. Ethical Approval**
 - The application must be written in German. Ask a native German speaker to proofread it, as the ethics committee will return the form for revision if there are grammar mistakes. This is likely due to legal reasons.
 - The committee meets once a month, and the meeting dates can be found on their website. They usually accept applications up to 2 weeks before the meeting, so make sure to submit it on time for the intended meeting. However, if there are too many applications, the committee might push yours to the next month's meeting. In this case, you should be informed. 
 - The committee typically sends several rounds of revisions, but these can be submitted on a rolling basis, and the revisions are discussed between meetings. 
@@ -251,7 +277,7 @@ Over time and with experience, you'll figure out what works best for you. Below 
 - Once you have an initial ethical approval, and if you are conducting similar experiments, you can submit an amendment to the existing approval.
 - An example application for ethical approval can be found in the repository section.
 
-**Instructions to Participants**
+**6.1.2. Instructions to Participants**
 - Participants should sleep as usual before the experiment and avoid alcohol or substances that impact their vigilance in the 24 hours prior.
 - Participants used to drink coffee or energy drinks regularly can drink these as they are used to in orther to avoid bias in your data. 
 - Instruct them to wash their hair the evening before or the morning of the experiment. Ask them not to use **any** hair products, as this significantly reduces the signal quality and increases your setup time. 
@@ -259,7 +285,7 @@ Over time and with experience, you'll figure out what works best for you. Below 
 - If you need them to fill out questionnaires before they arrive, send these well in advance (I typically sent them 24 hours prior).
 - Remind participants of their appointment the day before and summarize what they should do, should not do, bring, and complete before arriving at the lab.
 
-## General Recommendations
+## 6.2. General Recommendations
 **Environmental Noise:** Real-world experiments will have more environmental noise than simulator experiments. I recommend using a larger sample size to ensure sufficient statistical power. Check the sample size of others using similar paradigms and adjust accordingly. Generally, aim for a minimum of 20 participants in a driving simulator and 30 in real-world settings, but ideally, scale up by 5-10 participants if resources allow.
 
 **Channel Density:** High-density systems offer better spatial resolution, which aids in data cleaning using independent component analysis (ICA). Although we currently have a 32-channel EEG system, I recommend upgrading to a system with more electrodes.
@@ -314,7 +340,7 @@ Over time and with experience, you'll figure out what works best for you. Below 
 
 **Pilot Tests:** Running a pilot test is crucial, and potentially several may be necessary. Have the pilot participant complete the entire experiment to uncover any issues that might arise later. Ensure all data is logged correctly and all triggers are saved accurately. It's advisable to have two researchers present during the setup and throughout the experiment whenever possible.
 
-## Final Notes
+## 6.3. Final Notes
 The experimental setup is highly individual and influenced by various factors, including researcher experience, participant hair and skin type, weather, and more. With experience, setup time will likely decrease, but some factors are beyond your control. Realistically, expect setup times between 30 and 90 minutes.
 
 Keeping participants comfortable is key—engage in light conversation or allow for quiet time based on their preference. Stressed participants may sweat, which could negatively impact your signal quality.
