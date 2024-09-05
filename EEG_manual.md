@@ -151,61 +151,62 @@ Based on your decision, you can use either BrainVision Recorder, or the LSL reco
 
 1. Open the recorder.
 2. Click "Search for the LiveAmp" in the popup window. The LiveAmp must be on and the blue light must be blinking. Moreover, the Bluetooth dongle must be plugged into the laptop.  
-   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/1.png" width="50%">  
+   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/1.png" width="50%">
 3. A window like this should pop up. You can see the serial number of the amplifier.  
    <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/2.png" width="50%">  
    If the name of the amplifier says "Simulation", your amplifier was not detected. Check if the Bluetooth dongle is plugged in and the amplifier is on, blinking blue. Alternatively, check the power of the power bank.  
-   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/99.png" width="50%">  
+   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/99.png" width="50%">
 4. Create a new workspace  
-   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/4.png" width="50%">  
+   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/4.png" width="50%">
 5. Add the electrodes  
-   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/eegx.png" width="50%">  
+   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/eegx.png" width="50%">
 6. Choose the sampling rate, active electrodes, and the accelerometer from the amplifier, if you wish.
 7. Upload the position file of the electrodes so the data is saved with the proper channel names and locations. You won't have to do it later. Make sure you are using the correct one for the electrode system that is used. We use the Standard 32Ch actiCAP snap for LiveAmp. The right file should be named "CLACS-32.bvef". You should be able to download it from the BrainVision website, or retrieve it from a USB disk which is located in the wardrobe in the focus group room.  
-   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/eegc.png" width="50%">  
+   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/eegc.png" width="50%">
 8. Click next, keep the settings as it is. Do not apply any filters, always save raw data.
 9. Click next; no segmentation/averaging during recording.  
-   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/8.png" width="50%">  
+   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/8.png" width="50%">
 10. Save your workspace.  
    <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/9.png" width="50%">  
    Once your workspace is saved, you can see its name in the bottom right corner.  
-   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/10.png" width="50%">  
-11. To see the signal, click the button with the symbol of the eye. note, in the following picture, there is no EEG signal but only one EKG channel. Your screen should look different. 
+   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/10.png" width="50%">
+11. To see the signal, click the button with the symbol of the eye. Note, in the following picture, there is no EEG signal but only one EKG channel. Your screen should look different.  
 12. To see the impedances, click the next button with the resistor. Use this view for the electrode setup. Keep the resistance as low as possible, preferably under 10kOhm.  
-    <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/11.png" width="50%">  
+    <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/11.png" width="50%">
 13. To start recording the data, press the icon with the green triangle. Once the data starts saving, you will see a red icon under your signal, which says "SAVING HDD".  
-    <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/12.png" width="50%">  
+    <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/12.png" width="50%">
 14. To stop the recording, press the icon with the red square.
+
 
  
 ### 3.1.2. LSL Recorder 
 In order to make this work, you will need the LSL connector and the Lab Recorder. Please read the documentation on the website to install everything. 
 
 1. Open the LSL connector.  
-   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/z.png" width="50%">  
+   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/z.png" width="50%">
 2. Click "Scan for devices".
 3. You will see the serial number of the amplifier in the "Available devices". If you can't detect the amplifier, check if it's on and if the power bank is charged and plugged in.  
-   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/c.png" width="50%">  
+   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/c.png" width="50%">
 4. Specify the number of channels, number of AUX channels (in case you are using the trigger extension for EOG, EDA, ECG), and sampling frequency.
 5. Press "Link". Make sure that the device you are streaming from is in the same local network as all the other streaming devices. Otherwise, you won't be able to find the data streams.  
-   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/b.png" width="50%">  
+   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/b.png" width="50%">
 6. Keep the connector window opened and open the Lab Recorder.  
-   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/q.png" width="50%">  
+   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/q.png" width="50%">
 7. Click "Update" to search for the data streams. You should be able to see all the streams available.  
-   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/n.png" width="50%">  
+   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/n.png" width="50%">
 8. If you wish, change where the data will be stored and other details.
 9. Once everything is set up, press "Start". This will start saving your data. You can see the study root, elapsed time, and file size on the bottom of the GUI.  
-   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/m.png" width="50%">  
+   <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/m.png" width="50%">
 10. Once you are finished, press "Stop". Now you can close the Lab recorder.
 11. Navigate back to the LSL connector and unlink the amplifier.  
-    <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/b.png" width="50%">  
+    <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/b.png" width="50%">
 
 # 4. EEG Set Up
 
 To record your data, you'll need to set up all the electrodes. Typically, you'll want to record horizontal eye movements along with the EEG signals. Note that I have never recorded vertical eye movements, as they are well reflected in the electrodes placed just above the eyebrows.
 
 The entire setup for EEG and EOG should look like this: 
-    <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/entiresetup.jpeg" width="50%">  
+    <img src="https://github.com/nikol-figalova/HuFa_Ulm_EEG/blob/main/images/entiresetup_EEG.jpeg" width="50%">  
     
 ### 4.1. Electrooculography (EOG)
 
@@ -386,23 +387,11 @@ The experimental setup is highly individual and influenced by various factors, i
 
 Keeping participants comfortable is key—engage in light conversation or allow for quiet time based on their preference. Stressed participants may sweat, which could negatively impact your signal quality.
 
-
-
-
-
-<img src="" width="30%">
-<br /> <img src="" width="30%">
-
-
-
+____________
 ToDo: 
 - LSL connection
 - Study Manager (TCP)
 - PsychoPy experiment
-- 3.1.  setting up workspace
-- example ethics approval
-- example instructions
-- pic of entire equipment setup
-- 
+
 
 
