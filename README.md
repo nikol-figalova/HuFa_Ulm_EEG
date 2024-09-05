@@ -12,4 +12,4 @@ This repository is a source of materials for EEG and ERP experiments in the driv
 
 ### Citation
 If you use the resources or code from this repository, please cite it as follows:<br />
-Figalova, N. (2024). HuFa_Ulm_EEG: Materials for EEG Experiments in Driving Simulator. GitHub. https://github.com/yourusername/HuFa_Ulm_EEG
+Figalova, N. (2024). EEG in HuFa Driving Simulator: Recommendations & Resources. GitHub. https://github.com/yourusername/HuFa_Ulm_EEG
