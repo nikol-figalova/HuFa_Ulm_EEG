@@ -1,3 +1,5 @@
+*(include the logo of the university and the address in the header)*
+
 **PROBANDENINFORMATION**  
 Messung der durch eine Fahraufgabe induzierten mentalen Arbeitsbelastung anhand ereigniskorrelierter Potenziale  
 Versuchsleitung: M.Sc. Nikol Figalová  
