@@ -1,7 +1,7 @@
 # Example Ethikantrag
-(first and last parts of the Ethikantrag not included, use the latest version which can be downloaded from the Ethikkomission website)
+*(first and last parts of the Ethikantrag not included, use the latest version which can be downloaded from the Ethikkomission website)*
 
-4. Beschreibung des Forschungsprogrammes:
+4. Beschreibung des Forschungsprogrammes:  
 Die vorgestellte Studie ist Teil des SHAPE-IT Projekts und des Projekts RUMBA. SHAPE-IT ist ein Forschungsprojekt, das vom 01.10.2019 bis zum 31.03.2024 stattfindet und durch die European Union’s Horizon 2020 Research and Innovation Programme unter der Marie Sklodowska-Curie Grant Agreement/Vereinbarung 860410 finanziert wird. 
 Das übergreifende Ziel von SHAPE-IT ist eine rapide und reliable Entwicklung von automatisierten Fahrzeugen (AVs) für städtische Umgebung zu ermöglichen, die sicher und nutzerzentriert sind. Fahrzeug-Automatisierung wurde als Game-Changer im Transport identifiziert, da sie eine wesentliche Verringerung von Todesopfern im Straßenverkehr verspricht, während die Mobilität verbessert wird. Dennoch sind die Prozesse, die Automatisierung in Transportmittel integrieren, hauptsächlich fokussiert auf Technologien und mit unzureichender Berücksichtigung von Interaktionsprozessen von AVs und dem Verhalten direkter Nutzer*innen als auch außenstehender Personen.
 
