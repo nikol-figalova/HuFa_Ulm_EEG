@@ -1,7 +1,8 @@
 # Example Ethikantrag
 *(first and last parts of the Ethikantrag not included, use the latest version which can be downloaded from the Ethikkomission website)*
 
-4. Beschreibung des Forschungsprogrammes:  
+### 4. Beschreibung des Forschungsprogrammes:
+   
 Die vorgestellte Studie ist Teil des SHAPE-IT Projekts und des Projekts RUMBA. SHAPE-IT ist ein Forschungsprojekt, das vom 01.10.2019 bis zum 31.03.2024 stattfindet und durch die European Union’s Horizon 2020 Research and Innovation Programme unter der Marie Sklodowska-Curie Grant Agreement/Vereinbarung 860410 finanziert wird. 
 Das übergreifende Ziel von SHAPE-IT ist eine rapide und reliable Entwicklung von automatisierten Fahrzeugen (AVs) für städtische Umgebung zu ermöglichen, die sicher und nutzerzentriert sind. Fahrzeug-Automatisierung wurde als Game-Changer im Transport identifiziert, da sie eine wesentliche Verringerung von Todesopfern im Straßenverkehr verspricht, während die Mobilität verbessert wird. Dennoch sind die Prozesse, die Automatisierung in Transportmittel integrieren, hauptsächlich fokussiert auf Technologien und mit unzureichender Berücksichtigung von Interaktionsprozessen von AVs und dem Verhalten direkter Nutzer*innen als auch außenstehender Personen.
 
@@ -20,8 +21,7 @@ Zwischen dem manuellen und dem voll automatisierten Fahren können verschiedene 
 
 In Zusammenarbeit mit der Abteilung für Klinische und Gesundheitspsychologie und der Robert Bosch GmbH werden physiologische Parameter, wie z.B. die Aufzeichnung der Aktivität bestimmter Hirnregionen mittels Elektroenzephalographie (EEG), im Zusammenhang mit Übergangsprozessen/ während Übernahmesituationen untersucht. Dadurch können Rückschlüsse auf spezifische Informationsverarbeitungs- und Aufmerksamkeitsprozesse gezogen werden.
 
-5. Ausführlichen Studienplan (mit detaillierten Angaben zur Fallzahlberechnung /-abschätzung und den statistischen Auswertemethoden/-strategien) beifügen.
-(Bei Vorliegen eines solchen kann der Antrag durch entsprechende Kurzfassung und Verweise wesentlich vereinfacht werden.)
+### 5. Ausführlichen Studienplan (mit detaillierten Angaben zur Fallzahlberechnung /-abschätzung und den statistischen Auswertemethoden/-strategien) beifügen. (Bei Vorliegen eines solchen kann der Antrag durch entsprechende Kurzfassung und Verweise wesentlich vereinfacht werden.)
 
 **Fragestellung**
 
@@ -125,17 +125,17 @@ Ein Pilotversuch mit 5 Teilnehmern wurde im August 2022 durchgeführt. Auf der G
 **Hinweis zur Corona Pandemie**  
 Nach § 2 Abs.. 1 der Corona-Verordnung erlauben die derzeitigen Regelungen die Fortführung der Studientätigkeit unter Einhaltung der dort geltenden Infektionsschutzmaßnahmen im Rahmen von Abschlussarbeiten, Laborarbeiten. Je nach Entwicklung der Pandemiesituation wird das Hygienekonzept mit der Abteilung Arbeitsschutz der Abt. V abgestimmt.
 
-**6. Begründung für die Versuche an Menschen.**  
+### 6. Begründung für die Versuche an Menschen.  
 Bedeutung der zu erwartenden Untersuchungsergebnisse. Prinzip der Auswahl von Versuchspersonen, Zahl der Versuchspersonen, Zeitraum der Untersuchungen.  
 
 Für die Fragestellung ist es unerlässlich, dass menschliche Probanden an der Studie teilnehmen. Die Studie soll Erkenntnisse über den Fahrerzustand beim automatisierten Fahren im Straßenverkehr bringen und dementsprechend ist es nötig, menschliche Probanden zu beobachten.  
 
 Da hochautomatisiertes Fahren hinsichtlich Verkehrssicherheit ein wichtiges Thema ist, deckt die Studie einen relevanten Bereich der Verkehrspsychologie ab. Dementsprechend sehen die Auswahlkriterien der Studie nur die Teilnahme von Personen vor, die einen in Deutschland gültigen Führerschein der Klasse B besitzen. Des Weiteren werden für das Fahrsimulator-Experiment nur Probanden, die an keinen neurologischen bzw. psychischen und kardiovaskulären Vorerkrankungen leiden, rekrutiert (z. B. Birket-Smith et al., 1993; Myslobodsky & Horesh, 1978; Chang et al., 2017), um mögliche Rückwirkungen auf die Datenqualität der physiologischen EEG-Daten auszuschließen.
 
-**7. Darstellung bisher dazu vorliegender aussagekräftiger Tierversuche**  
+### 7. Darstellung bisher dazu vorliegender aussagekräftiger Tierversuche  
 In den beantragten Studien werden keine Tierversuche durchgeführt. Da es sich um Studien zur Untersuchung des menschlichen Verhaltens im Rahmen der Psychologie handelt, und hier eine Schlussfolgerung vom Tier auf den Menschen unmöglich scheint, müssen die beantragten Studien am Menschen durchgeführt werden. So ist es möglich, menschliches Verhalten direkt zu beobachten und zu interpretieren. Ein Schaden der Teilnehmer*innen ist bei Beachtung der Ausschlusskriterien und Komplikationen zu keinem Zeitpunkt der Untersuchung möglich. Daher scheint aus unserer Sicht die Untersuchung am Menschen begründet und vertretbar.
 
-**8. Darstellung bisher zum Projekt bzw. zur Fragestellung vorliegender Untersuchungen am Menschen. Angabe der bisherigen Erfahrungen über die verwendeten Techniken beim Menschen (Literaturübersicht).**  
+### 8. Darstellung bisher zum Projekt bzw. zur Fragestellung vorliegender Untersuchungen am Menschen. Angabe der bisherigen Erfahrungen über die verwendeten Techniken beim Menschen (Literaturübersicht).  
 Mit zunehmender Automatisierung wird sich die Rolle des Fahrers verändern. Es wird weniger um das Fahren und mehr um die Überwachung des autonomen Systems gehen. Die technischen Systeme sind jedoch unvollkommen, und bis fahrerlose Autos zur Verfügung stehen, müssen wir die Auswirkungen zunehmend automatisierter Fahrzeuge (AVs) auf die Fähigkeit der Fahrer, das Fahrzeug zu bedienen, sowohl die Umgebung als auch die Automatisierung zu überwachen und die Verantwortung für das Fahren effizient zu übernehmen, berücksichtigen (Collet & Musicant, 2019).  
 SAE International (2018) definierte sechs Automatisierungsstufen, die von 0 (keine autonome Steuerung) bis 5 (völlig autonomes Fahrzeug, das Fahrzeug fährt unter allen Bedingungen) reichen. Auf den Stufen 0 bis 2 wird vom Fahrer verlangt, dass er die Straße überwacht und auf einen sofortigen Eingriff vorbereitet ist. Bei höheren Automatisierungsgraden (SAE-Stufen 3 und 4) ist es dem Fahrer gestattet, sich an Aktivitäten außerhalb des Fahrbetriebs zu beteiligen. Wenn die Automatisierung ihre Systemgrenze erreicht, stellt sie eine Übernahmeanforderung (TOR), und der Fahrer muss eingreifen (Zhang, de Winter, Varotto, Happee, & Martens, 2019).  
 Damit diese Übernahme problemlos funktioniert, was bedeutsam für die Sicherheit auf den Straßen ist, müssen die Aufmerksamkeit und der mentale Workload des Fahrers in einem bestimmten Bereich liegen. Führt die reine Supervision des Fahrzeugs beim automatisierten Fahren zu einem kognitiven Underload, also zu einer zu geringen Aufmerksamkeit, kann dies die Übernahme des Fahrzeugs negativ beeinflussen.
@@ -154,18 +154,18 @@ Die empfundene Arbeitsbelastung wird von jedem Probanden durch Beantwortung des 
 **Müdigkeit**  
 Die Müdigkeit wird anhand der Karolinska-Müdigkeitsskala bewertet, einem subjektiven Messinstrument, das aus einer Frage besteht. Mit der Frage wird untersucht, wie müde sich die Testperson im Moment fühlt. Es hat sich gezeigt, dass die Skala sensitiv ist, wenn es darum geht, verminderte Erregung festzustellen (Shadid et al., 2011).
 
-**9. Risiko der Komplikationen (auch Schmerzen und Nebenwirkungen, psychische Belastung) sowie Maßnahmen zur Verhütung bzw. Verminderung der Komplikationen**  
+### 9. Risiko der Komplikationen (auch Schmerzen und Nebenwirkungen, psychische Belastung) sowie Maßnahmen zur Verhütung bzw. Verminderung der Komplikationen  
 Besondere Risiken oder Komplikationen sind während der Studie aus unserer Sicht nicht zu erwarten.
 
-**10. Darstellung der ärztlichen Beziehungen zwischen Untersucher und Patient (z. B. Chefarzt, Oberarzt, Stationsarzt, Zeitraum der bisherigen Betreuung des Patienten)**  
+### 10. Darstellung der ärztlichen Beziehungen zwischen Untersucher und Patient (z. B. Chefarzt, Oberarzt, Stationsarzt, Zeitraum der bisherigen Betreuung des Patienten)  
 Nicht zutreffend.
 
-**11. Ist der Patient über die Diagnose bzw. die Art der Erkrankung informiert?**  
+### 11. Ist der Patient über die Diagnose bzw. die Art der Erkrankung informiert?  
 Nicht zutreffend.
 
 **Ü Aufklärungsbogen und Einwilligungserklärung auf Briefpapier der Fakultät mit Briefkopf der Abteilung dem Antrag beifügen. Bitte dazu Muster-Formblätter und ETHIK-Info beachten.**
 
-**12. Darstellung, wie die Versuchsperson über das Untersuchungsprogramm, die Notwendigkeit und die Risiken informiert wurde und unter welchen Bedingungen die Zustimmung zum Versuch gegeben wurde**  
+### 12. Darstellung, wie die Versuchsperson über das Untersuchungsprogramm, die Notwendigkeit und die Risiken informiert wurde und unter welchen Bedingungen die Zustimmung zum Versuch gegeben wurde  
 Beschreibung, wie die Testperson über das Studienprogramm, die Notwendigkeit und die Risiken informiert wurde und unter welchen Bedingungen die Zustimmung zur Studie erteilt wurde.
 
 Die Teilnehmer*innen erhalten das Informationsblatt und die Einverständniserklärung per E-Mail, bevor sie am Veranstaltungsort eintreffen. Diese Dokumente werden ihnen nach ihrer Ankunft am Veranstaltungsort noch einmal in Papierform ausgehändigt. Zu Beginn der Studie werden die Teilnehmer*innen vom Prüfarzt mündlich und schriftlich über das Ziel und den Ablauf der Studie, ihre Notwendigkeit und die bestehenden Risiken informiert. Zu diesem Zweck werden den Probanden drei Dokumente ausgehändigt:
@@ -188,7 +188,11 @@ Insgesamt erhalten die Versuchspersonen detaillierte Informationen über den gen
 - Möglichkeit, Fragen zu stellen und die Studie jederzeit zu beenden
 - Aufforderung zum sorgfältigen Umgang mit den Versuchsgeräten
 
-**Literaturen**
+
+
+*(sections 13-22 skipped, doesn't apply)*
+
+### Literaturen
 
 - Causse, M., Fabre, E., Giraudet, L., Gonzalez, M., & Peysakhovich, V. (2015). EEG/ERP as a Measure of Mental Workload in a Simple Piloting Task. *Procedia Manufacturing, 3*, 5230–5236. https://doi.org/10.1016/j.promfg.2015.07.594
 - Chan, C.‑Y. (2017). Advancements, prospects, and impacts of automated driving systems. *International Journal of Transportation Science and Technology, 6(3)*, 208–216. https://doi.org/10.1016/j.ijtst.2017.07.008
