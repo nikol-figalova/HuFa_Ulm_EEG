@@ -1,22 +1,22 @@
 ## List of Contents 
-**1. (Some Very Basic) Background Knowledge**<br />
+1. (Some Very Basic) Background Knowledge<br />
   1.1. Basic Principles of EEG<br />
   1.2. Basic Principles of ERP<br />
   1.3. Application of EEG and ERP in Driving Research<br />
   1.4. Recommended Literature<br />
-**2. EEG Equipment Overview**<br />
+2. EEG Equipment Overview<br />
   2.1. Hardware<br />
   2.2. Consumables<br />
-**3. Software Requirements**<br />
+3. Software Requirements<br />
   3.1. Setting Up Workspace for Data Recording<br />
     3.1.1. BrainVision Recorder<br />
     3.1.2. LSL Recorder<br />
-**4. EEG Set Up**<br />
+4. EEG Set Up<br />
   4.1. Electrooculography (EOG)<br />
   4.2. Electroencephalography (EEG)<br />
-**5. Data Pre-Processing and Analysis**<br />
+5. Data Pre-Processing and Analysis**<br />
   5.1. Recommended Literature<br />
-**6. Tips and Good Practices**<br />
+6. Tips and Good Practices<br />
   6.1. Before the Experiment<br />
     6.1.1. Ethical Approval<br />
     6.1.2. Instructions to Participants<br />
