@@ -1,28 +1,30 @@
 ## List of Contents 
-1. (Some Very Basic) Background Knowledge<br />
-  1.1. Basic Principles of EEG<br />
-  1.2. Basic Principles of ERP<br />
-  1.3. Application of EEG and ERP in Driving Research<br />
-  1.4. Recommended Literature<br />
-2. EEG Equipment Overview<br />
-  2.1. Hardware<br />
-  2.2. Consumables<br />
-3. Software Requirements<br />
-  3.1. Setting Up Workspace for Data Recording<br />
-    3.1.1. BrainVision Recorder<br />
-    3.1.2. LSL Recorder<br />
-4. EEG Set Up<br />
-  4.1. Electrooculography (EOG)<br />
-  4.2. Electroencephalography (EEG)<br />
-5. Data Pre-Processing and Analysis**<br />
-  5.1. Recommended Literature<br />
-6. Tips and Good Practices<br />
-  6.1. Before the Experiment<br />
-    6.1.1. Ethical Approval<br />
-    6.1.2. Instructions to Participants<br />
-  6.2. General Recommendations<br />
-  6.3. Final Notes<br />
-  
+**1. (Some Very Basic) Background Knowledge**<br />
+&nbsp;&nbsp;&nbsp;&nbsp;1.1. Basic Principles of EEG<br />
+&nbsp;&nbsp;&nbsp;&nbsp;1.2. Basic Principles of ERP<br />
+&nbsp;&nbsp;&nbsp;&nbsp;1.3. Application of EEG and ERP in Driving Research<br />
+&nbsp;&nbsp;&nbsp;&nbsp;1.4. Recommended Literature<br />
+**2. EEG Equipment Overview**<br />
+&nbsp;&nbsp;&nbsp;&nbsp;2.1. Hardware<br />
+&nbsp;&nbsp;&nbsp;&nbsp;2.2. Consumables<br />
+**3. Software Requirements**<br />
+&nbsp;&nbsp;&nbsp;&nbsp;3.1. Setting Up Workspace for Data Recording<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*3.1.1. BrainVision Recorder*<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*3.1.2. LSL Recorder*<br />
+**4. EEG Set Up**<br />
+&nbsp;&nbsp;&nbsp;&nbsp;4.1. Electrooculography (EOG)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;4.2. Electroencephalography (EEG)<br />
+**5. Data Pre-Processing and Analysis**<br />
+&nbsp;&nbsp;&nbsp;&nbsp;5.1. Recommended Literature<br />
+**6. Tips and Good Practices**<br />
+&nbsp;&nbsp;&nbsp;&nbsp;6.1. Before the Experiment<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*6.1.1. Ethical Approval*<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*6.1.2. Instructions to Participants*<br />
+&nbsp;&nbsp;&nbsp;&nbsp;6.2. General Recommendations<br />
+&nbsp;&nbsp;&nbsp;&nbsp;6.3. Final Notes<br />
+
+
+    
 # 1. (Some Very Basic) Background Knowledge
 
 Driver-vehicle interactions can be assessed using different approaches. Self-report measures are easy to implement; however, they might be overly simplistic. Performance measures can provide good sensitivity for differentiating high-demand performance tasks; however, they are rather inefficient when studying low- to medium-demand tasks. Another possible approach is to use psychophysiological data, which is becoming more convenient due to the increasing availability of relatively cheap and precise wearable sensors. Psychophysiological measures such as electroencephalogram (EEG), electrocardiogram (ECG), and electrodermal activity (EDA) can be used to assess drivers’ experience unobtrusively in real time. Disadvantages of psychophysiological measures include the need for special tools and equipment, expertise to collect and analyze the data, and possibly a high signal-to-noise ratio.<br />
