@@ -391,7 +391,5 @@ ____________
 ToDo: 
 - LSL connection
 - Study Manager (TCP)
-- PsychoPy experiment
-
 
 
