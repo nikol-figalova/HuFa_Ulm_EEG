@@ -1,3 +1,9 @@
+[//]: # (Title: EEG in HuFa Driving Simulator: Recommendations & Resources)  
+[//]: # (Author:Nikol Figalova)  
+[//]: # (Place: Department of Human Factors, Ulm University, Ulm, Germany)  
+[//]: # (Tags: #EEG #manual #drivingsimulator #experiment #psychopy #ERP)  
+[//]: # (Date: September 2024)  
+
 ## List of Contents 
 **1. (Some Very Basic) Background Knowledge**<br />
 &nbsp;&nbsp;&nbsp;&nbsp;1.1. Basic Principles of EEG<br />
