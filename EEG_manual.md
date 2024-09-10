@@ -135,7 +135,7 @@ For participants to clean their hair after the experiment, you'll need to provid
 Ensure that you always have fresh EEG gel available for experiments. The shelf life of an opened EEG gel is about 12 months (be sure to write the opening date on the gel pack), but in my experience, they can sometimes dry out faster. If the gel dries out, it may be difficult to achieve the low impedance required, as the conductivity will be poor. Always check the EEG gel well in advance and order new supplies from BrainProducts if needed. Keep in mind that it can take a few weeks for them to process and ship your order. While it's important not to over-order, it's better to have a little extra on hand than to run out during an experiment. 
 
 # 3. Software Requirements 
-To visualize the EEG signals during setup, you'll need the BrainVision Recorder. This tool allows you to monitor the electrode resistance and visualize the data in real-time. 
+To visualize the EEG signals during setup, you'll need the BrainVision Recorder. This tool allows you to monitor the electrode resistance and visualize the data in real-time. You can also use the LSL (lab streaming layer) Viewer, but I would argue that you should use the original software for the setup.
 
 For recording data, you have two options: BrainVision Recorder or LSL Recorder. 
 
@@ -143,12 +143,9 @@ For recording data, you have two options: BrainVision Recorder or LSL Recorder.
 
 **LSL Recorder:** While the LSL Recorder can also be used for data recording, its main advantage lies in the synchronization of different data streams. Depending on your experimental design, it may be easier to record data directly with triggers sent from the simulator rather than using LSL. However, if you plan to integrate additional data streams (e.g., secondary tasks in PsychoPy), LSL may be the better choice. 
 
-To synchronize data with the driving simulator, you can use the TCP trigger receiver and transmitter. Alternatively, you can use the Lab Streaming Layer (LSL). For more information and installation instructions, visit the LSL website: Lab Streaming Layer.  
+To synchronize data with the driving simulator, you can use the TCP trigger receiver and transmitter. Alternatively, you can use the Lab Streaming Layer (LSL). For more information and installation instructions, visit the LSL website: https://labstreaminglayer.org/#/. 
 
-The advantage of using LSL is its easy integration with PsychoPy. PsychoPy is a powerful software tool based on Python that allows you to create psychophysiological experiments using either code or a graphical user interface (GUI). It’s a free tool with extensive online support and tutorials. Learn more at PsychoPy.  
-
-You can also use BrainVision Analyzer for data pre-processing. This software might be easier for novice users due to its graphical user interface and ease of navigation. However, it offers limited options compared to EEGLab, which provides greater flexibility and is thus the recommended tool.
-
+The advantage of using LSL is its easy integration with PsychoPy. PsychoPy is a software tool based on Python that allows you to create psychophysiological experiments using either code or a graphical user interface (GUI). It’s a free tool with extensive online support and tutorials.  
 
 
 ## 3.1. Setting Up Workspace for Data Recording 
@@ -285,7 +282,9 @@ Keep the wardrobe organized and clean. Use the organizers to keep everything in 
 
 # 5. Data Pre-Processing and Analysis
 
-This will depend on your experimental setup and research questions. For general guidelines, Steve Luck and Mike X Cohen were the best resources. An absolute gold for me was the book Applied event-related potential data analysis by Steven Luck. Its an online book, available for free, and shows step by step how to pre-process and analyse ERP data. To help understanding the actual analysis, Analyzing neural time series data: theory and practice is priceless. Finally, the BeMoBil pipeline by Marius Klug is a great, reproducible approach to analyse your mobile data. In this repository, you can find the code that is based on this pipeline and which can be reused for your own data whenever applicable. 
+You can use BrainVision Analyzer for data pre-processing. This software might be easier for novice users due to its graphical user interface and ease of navigation. However, it offers limited options compared to EEGLab, which provides greater flexibility and is thus the recommended tool.
+
+The pre-processing pipeline will depend on your experimental setup and research questions. For general guidelines, Steve Luck and Mike X Cohen were the best resources. An absolute gold for me was the book Applied event-related potential data analysis by Steven Luck. Its an online book, available for free, and shows step by step how to pre-process and analyse ERP data. To help understanding the actual analysis, Analyzing neural time series data: theory and practice is priceless. Finally, the BeMoBil pipeline by Marius Klug is a great, reproducible approach to analyse your mobile data. In this repository, you can find the code that is based on this pipeline and which can be reused for your own data whenever applicable. 
 
 For data analysis, I strongly recommend using Matlab with the EEGLab Extension. During my work, I utilized the following plugins:
 - Darbeliai v2022.12.22.1
